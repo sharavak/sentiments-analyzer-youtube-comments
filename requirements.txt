@@ -1,0 +1,5 @@
+streamlit
+deep_translator
+nltk
+selenium
+webdriver_manager
