@@ -136,7 +136,7 @@ tzlocal==5.0.1
 urllib3==1.26.7
 validators==0.22.0
 watchdog==3.0.0
-webdriver-manager==4.0.1
+webdriver-manager
 Werkzeug==2.2.2
 whois==0.9.27
 wrapt==1.16.0
