@@ -147,3 +147,4 @@ xyzservices==2023.7.0
 yarl==1.9.4
 zipp==3.8.1
 setuptools==57.5.0
+ez_setup
