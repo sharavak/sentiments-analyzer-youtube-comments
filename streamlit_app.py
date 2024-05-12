@@ -1,6 +1,5 @@
 import streamlit as st
 import scraper
-from deep_translator import GoogleTranslator
 import plotly.express as px
 import plotly.graph_objects as go
 from preprocessing import get_sentiment
@@ -23,13 +22,9 @@ val=st.text_input(label='Type the youtube url')
 if val:
     with st.spinner("Scraping data...") as status:
         comments=scraper.scrape(val)
-        text=[]
-        for i in comments:
-            comment=GoogleTranslator(source='auto', target='en').translate(text=i)
-            text.append(comment)
     with st.expander("Show sentiments"):
-        pos,neg,neu=get_sentiment(text)
-        st.write(f'Total Comments: {len(text)}')
+        pos,neg,neu=get_sentiment(comments)
+        st.write(f'Total Comments: {len(comments)}')
         df =[pos,neg,neu]
         fig = px.pie(values=df,names=['Positive','Negative','Neutral'])
         st.plotly_chart(fig,use_container_width=True)
