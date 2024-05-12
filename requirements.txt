@@ -148,4 +148,4 @@ yarl==1.9.4
 zipp==3.8.1
 ez_setup
 2to3
-PyVirtualDisplay-wheel-file.whl
+setuptools==57.0.0
