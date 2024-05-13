@@ -84,7 +84,7 @@ PyAudio==0.2.13
 pycparser==2.21
 pydeck==0.8.1b0
 pyee==11.0.0
-Pygments==2.16.1
+Pygments
 pylibsrtp==0.8.0
 pyOpenSSL==23.2.0
 pyparsing==3.1.2
